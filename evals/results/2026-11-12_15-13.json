@@ -1,0 +1,41 @@
+{
+  "run_at": "2026-11-12_15-13",
+  "report_run": "2026-11-12_15-13",
+  "caught": [
+    "O1",
+    "O2",
+    "O3",
+    "C1",
+    "C2",
+    "C3",
+    "D1",
+    "D2",
+    "U1",
+    "U2",
+    "U3",
+    "P1",
+    "P2",
+    "P3",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "A1",
+    "A2",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "G1",
+    "G2"
+  ],
+  "missed": [],
+  "not_tested": [],
+  "false_alarms": 5,
+  "trap_alarms": [
+    "UT1",
+    "PT1"
+  ],
+  "detection_rate": 100,
+  "false_alarm_rate": 13
+}

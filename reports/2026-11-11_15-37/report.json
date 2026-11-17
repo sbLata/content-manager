@@ -1,0 +1,230 @@
+{
+  "site": "practice-site",
+  "run_at": "2026-11-11_15-37",
+  "pages_audited": [
+    "about.html",
+    "beginner-guide.html",
+    "faq.html",
+    "index.html",
+    "news.html",
+    "pest-guide.html",
+    "pricing.html",
+    "watering-guide.html"
+  ],
+  "pages_skipped": [],
+  "errors": [],
+  "counts": {
+    "high": 2,
+    "medium": 10,
+    "low": 3
+  },
+  "findings": [
+    {
+      "check": "Traditional SEO",
+      "severity": "high",
+      "page": "faq.html",
+      "related_pages": [],
+      "issue": "Missing page title",
+      "evidence": "(no <title> element)",
+      "why_it_matters": "Search engines and browser tabs show the title; without it the page is hard to find.",
+      "suggested_fix": "Add a <title> that names the page topic and the site, e.g. 'FAQ | Leafline'.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F001"
+    },
+    {
+      "check": "Traditional SEO",
+      "severity": "high",
+      "page": "index.html",
+      "related_pages": [],
+      "issue": "Broken internal link",
+      "evidence": "shop.html",
+      "why_it_matters": "Readers hit a 'page not found' error.",
+      "suggested_fix": "Create shop.html or point the link to an existing page.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F002"
+    },
+    {
+      "check": "Duplicate content",
+      "severity": "medium",
+      "page": "about.html",
+      "related_pages": [
+        "index.html"
+      ],
+      "issue": "Paragraph is 100% identical to one on index.html",
+      "evidence": "Leafline started as a small notebook of care tips shared between neighbours. Today we help...",
+      "why_it_matters": "Repeated text makes pages compete with each other and wastes the reader's time.",
+      "suggested_fix": "Keep the paragraph on the most relevant page and link to it from the other.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F003"
+    },
+    {
+      "check": "Missing images and alt text",
+      "severity": "medium",
+      "page": "about.html",
+      "related_pages": [],
+      "issue": "Image has no alt text",
+      "evidence": "images/team.svg",
+      "why_it_matters": "Screen readers can't describe the image and search engines can't read it.",
+      "suggested_fix": "Add alt text describing what the image shows, or alt=\"\" if it is purely decorative.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F004"
+    },
+    {
+      "check": "Traditional SEO",
+      "severity": "medium",
+      "page": "about.html",
+      "related_pages": [
+        "news.html"
+      ],
+      "issue": "Duplicate page title",
+      "evidence": "<title>Leafline</title>",
+      "why_it_matters": "Pages with the same title compete in search and confuse readers.",
+      "suggested_fix": "Give each page a unique title that names its topic.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F005"
+    },
+    {
+      "check": "Duplicate content",
+      "severity": "medium",
+      "page": "beginner-guide.html",
+      "related_pages": [
+        "watering-guide.html"
+      ],
+      "issue": "Paragraph is 99% identical to one on watering-guide.html",
+      "evidence": "Good drainage matters more than most people think. Always choose a pot with a hole in the ...",
+      "why_it_matters": "Repeated text makes pages compete with each other and wastes the reader's time.",
+      "suggested_fix": "Keep the paragraph on the most relevant page and link to it from the other.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F006"
+    },
+    {
+      "check": "Missing images and alt text",
+      "severity": "medium",
+      "page": "beginner-guide.html",
+      "related_pages": [],
+      "issue": "Image has no alt text",
+      "evidence": "images/snake-plant.svg",
+      "why_it_matters": "Screen readers can't describe the image and search engines can't read it.",
+      "suggested_fix": "Add alt text describing what the image shows, or alt=\"\" if it is purely decorative.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F007"
+    },
+    {
+      "check": "Duplicate content",
+      "severity": "medium",
+      "page": "index.html",
+      "related_pages": [
+        "about.html"
+      ],
+      "issue": "Paragraph is 100% identical to one on about.html",
+      "evidence": "Leafline started as a small notebook of care tips shared between neighbours. Today we help...",
+      "why_it_matters": "Repeated text makes pages compete with each other and wastes the reader's time.",
+      "suggested_fix": "Keep the paragraph on the most relevant page and link to it from the other.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F008"
+    },
+    {
+      "check": "Missing images and alt text",
+      "severity": "medium",
+      "page": "index.html",
+      "related_pages": [],
+      "issue": "Image has no alt text",
+      "evidence": "images/hero.svg",
+      "why_it_matters": "Screen readers can't describe the image and search engines can't read it.",
+      "suggested_fix": "Add alt text describing what the image shows, or alt=\"\" if it is purely decorative.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F009"
+    },
+    {
+      "check": "Traditional SEO",
+      "severity": "medium",
+      "page": "news.html",
+      "related_pages": [
+        "about.html"
+      ],
+      "issue": "Duplicate page title",
+      "evidence": "<title>Leafline</title>",
+      "why_it_matters": "Pages with the same title compete in search and confuse readers.",
+      "suggested_fix": "Give each page a unique title that names its topic.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F010"
+    },
+    {
+      "check": "Traditional SEO",
+      "severity": "medium",
+      "page": "pest-guide.html",
+      "related_pages": [],
+      "issue": "Missing meta description",
+      "evidence": "(no meta description)",
+      "why_it_matters": "Search results show this text; without it the snippet is picked at random.",
+      "suggested_fix": "Add a one-sentence meta description (under 160 characters) summarising the page.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F011"
+    },
+    {
+      "check": "Duplicate content",
+      "severity": "medium",
+      "page": "watering-guide.html",
+      "related_pages": [
+        "beginner-guide.html"
+      ],
+      "issue": "Paragraph is 99% identical to one on beginner-guide.html",
+      "evidence": "Good drainage matters more than most people think. Always choose a pot with a hole in the ...",
+      "why_it_matters": "Repeated text makes pages compete with each other and wastes the reader's time.",
+      "suggested_fix": "Keep the paragraph on the most relevant page and link to it from the other.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F012"
+    },
+    {
+      "check": "Accessibility basics",
+      "severity": "low",
+      "page": "faq.html",
+      "related_pages": [],
+      "issue": "Vague link text",
+      "evidence": "click here",
+      "why_it_matters": "Out of context, the link doesn't say where it goes.",
+      "suggested_fix": "Rewrite the link text to describe the destination, e.g. 'See how to cancel your plan'.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F013"
+    },
+    {
+      "check": "GEO readiness",
+      "severity": "low",
+      "page": "faq.html",
+      "related_pages": [],
+      "issue": "FAQ page has no FAQ structured data",
+      "evidence": "(no FAQPage schema)",
+      "why_it_matters": "Structured data helps search engines and AI answer tools quote your answers.",
+      "suggested_fix": "Add FAQPage JSON-LD listing each question and answer.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F014"
+    },
+    {
+      "check": "Accessibility basics",
+      "severity": "low",
+      "page": "watering-guide.html",
+      "related_pages": [],
+      "issue": "Heading level skipped (H1 to H4)",
+      "evidence": "<h4>Why watering is tricky</h4>",
+      "why_it_matters": "Skipped levels break the page outline that screen-reader users navigate by.",
+      "suggested_fix": "Change this heading to H2, or add the missing level above it.",
+      "method": "rule",
+      "status": "draft",
+      "id": "F015"
+    }
+  ]
+}

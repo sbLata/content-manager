@@ -1,0 +1,456 @@
+{
+  "site": "practice-site",
+  "planted_issues": 26,
+  "traps": 8,
+  "items": [
+    {
+      "id": "O1",
+      "check": "Outdated content",
+      "type": "issue",
+      "pages": [
+        "about.html"
+      ],
+      "what": "Past internship round presented as current",
+      "evidence": "We are currently hiring for summer 2021 internships.",
+      "expected": "flag",
+      "method": "AI",
+      "match": "intern"
+    },
+    {
+      "id": "O2",
+      "check": "Outdated content",
+      "type": "issue",
+      "pages": [
+        "index.html"
+      ],
+      "what": "App launch from 2022 presented as upcoming",
+      "evidence": "Our new mobile app launches next month (March 2022)!",
+      "expected": "flag",
+      "method": "AI",
+      "match": "app"
+    },
+    {
+      "id": "O3",
+      "check": "Outdated content",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html"
+      ],
+      "what": "2020 award presented as this year's pick",
+      "evidence": "Our 2020 Plant of the Year is the snake plant, and it is this year's top pick",
+      "expected": "flag",
+      "method": "AI",
+      "match": "2020|plant of the year"
+    },
+    {
+      "id": "OT1",
+      "check": "Outdated content",
+      "type": "trap",
+      "pages": [
+        "about.html"
+      ],
+      "what": "Founding year is correctly in the past",
+      "evidence": "Leafline was founded in 2015",
+      "expected": "no_flag",
+      "method": "AI",
+      "match": "2015|founded"
+    },
+    {
+      "id": "C1",
+      "check": "Contradictory content",
+      "type": "issue",
+      "pages": [
+        "pricing.html",
+        "faq.html"
+      ],
+      "what": "Basic plan price differs ($12 vs $15)",
+      "evidence": "Basic plan: $12 per month / The Basic plan costs $15 per month",
+      "expected": "escalate",
+      "method": "AI",
+      "match": "basic"
+    },
+    {
+      "id": "C2",
+      "check": "Contradictory content",
+      "type": "issue",
+      "pages": [
+        "index.html",
+        "faq.html"
+      ],
+      "what": "Free-shipping threshold differs ($50 vs $75)",
+      "evidence": "free shipping on all orders over $50 / shipping is free on orders over $75",
+      "expected": "escalate",
+      "method": "AI",
+      "match": "shipping"
+    },
+    {
+      "id": "C3",
+      "check": "Contradictory content",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html",
+        "watering-guide.html"
+      ],
+      "what": "Snake plant watering advice conflicts",
+      "evidence": "every two to three weeks / once a week",
+      "expected": "escalate",
+      "method": "AI",
+      "match": "snake|water"
+    },
+    {
+      "id": "CT1",
+      "check": "Contradictory content",
+      "type": "trap",
+      "pages": [
+        "pricing.html"
+      ],
+      "what": "Different prices for different plans",
+      "evidence": "Basic plan: $12 per month / Premium plan: $25 per month",
+      "expected": "no_flag",
+      "method": "AI",
+      "match": "premium"
+    },
+    {
+      "id": "D1",
+      "check": "Duplicate content",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html",
+        "watering-guide.html"
+      ],
+      "what": "Near-identical drainage paragraph on two pages",
+      "evidence": "Good drainage matters more than most people think...",
+      "expected": "flag",
+      "method": "Rule+AI",
+      "match": "drainage"
+    },
+    {
+      "id": "D2",
+      "check": "Duplicate content",
+      "type": "issue",
+      "pages": [
+        "index.html",
+        "about.html"
+      ],
+      "what": "Identical intro paragraph on home and about pages",
+      "evidence": "Leafline started as a small notebook of care tips...",
+      "expected": "flag",
+      "method": "Rule+AI",
+      "match": "notebook"
+    },
+    {
+      "id": "DT1",
+      "check": "Duplicate content",
+      "type": "trap",
+      "pages": [
+        "all pages"
+      ],
+      "what": "Shared footer repeated on every page",
+      "evidence": "Leafline is an independent plant-care blog...",
+      "expected": "no_flag",
+      "method": "Rule+AI",
+      "match": "independent plant-care blog"
+    },
+    {
+      "id": "U1",
+      "check": "User-friendliness",
+      "type": "issue",
+      "pages": [
+        "watering-guide.html"
+      ],
+      "what": "One very long paragraph with no breaks",
+      "evidence": "Watering is something every plant owner thinks about...",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "U2",
+      "check": "User-friendliness",
+      "type": "issue",
+      "pages": [
+        "pricing.html"
+      ],
+      "what": "No clear next action: no way to sign up or choose a plan",
+      "evidence": "(no sign-up link or button on the pricing page)",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "U3",
+      "check": "User-friendliness",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html"
+      ],
+      "what": "Steps written as one run-on sentence instead of a numbered list",
+      "evidence": "first you get a pot ... and then you water it",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "UT1",
+      "check": "User-friendliness",
+      "type": "trap",
+      "pages": [
+        "pest-guide.html"
+      ],
+      "what": "Long page, but well structured with headings and short paragraphs",
+      "evidence": "(whole page)",
+      "expected": "no_flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "P1",
+      "check": "Content positioning",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html"
+      ],
+      "what": "Expert jargon on a page for complete beginners",
+      "evidence": "Ensure substrate aeration via perlite amendment...",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "P2",
+      "check": "Content positioning",
+      "type": "issue",
+      "pages": [
+        "pricing.html"
+      ],
+      "what": "Pricing page mostly about houseplant history, not the plans",
+      "evidence": "Houseplants have a long history...",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "P3",
+      "check": "Content positioning",
+      "type": "issue",
+      "pages": [
+        "index.html"
+      ],
+      "what": "Home page headline is vague and states no value",
+      "evidence": "Stuff about plants",
+      "expected": "flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "PT1",
+      "check": "Content positioning",
+      "type": "trap",
+      "pages": [
+        "pest-guide.html"
+      ],
+      "what": "Technical language is right for a page aimed at experienced growers",
+      "evidence": "This guide is for experienced growers...",
+      "expected": "no_flag",
+      "method": "AI rubric",
+      "match": ""
+    },
+    {
+      "id": "I1",
+      "check": "Missing images and alt text",
+      "type": "issue",
+      "pages": [
+        "beginner-guide.html"
+      ],
+      "what": "Image has no alt attribute",
+      "evidence": "images/snake-plant.svg",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "snake-plant"
+    },
+    {
+      "id": "I2",
+      "check": "Missing images and alt text",
+      "type": "issue",
+      "pages": [
+        "index.html"
+      ],
+      "what": "Hero image has no alt attribute",
+      "evidence": "images/hero.svg",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "hero"
+    },
+    {
+      "id": "I3",
+      "check": "Missing images and alt text",
+      "type": "issue",
+      "pages": [
+        "about.html"
+      ],
+      "what": "Team photo has no alt attribute",
+      "evidence": "images/team.svg",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "team"
+    },
+    {
+      "id": "I4",
+      "check": "Missing images and alt text",
+      "type": "issue",
+      "pages": [
+        "pest-guide.html"
+      ],
+      "what": "Text refers to a photo that is not on the page",
+      "evidence": "shown in the photo below",
+      "expected": "flag",
+      "method": "AI",
+      "match": "photo|image"
+    },
+    {
+      "id": "IT1",
+      "check": "Missing images and alt text",
+      "type": "trap",
+      "pages": [
+        "pest-guide.html",
+        "about.html"
+      ],
+      "what": "Decorative divider and icon images with intentionally empty alt",
+      "evidence": "images/divider.svg, images/news-icon.svg (alt=\"\")",
+      "expected": "no_flag",
+      "method": "Rule",
+      "match": "divider|news-icon"
+    },
+    {
+      "id": "A1",
+      "check": "Accessibility basics",
+      "type": "issue",
+      "pages": [
+        "faq.html"
+      ],
+      "what": "Vague link text",
+      "evidence": "click here",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "click here"
+    },
+    {
+      "id": "A2",
+      "check": "Accessibility basics",
+      "type": "issue",
+      "pages": [
+        "watering-guide.html"
+      ],
+      "what": "Heading level skipped (H1 to H4)",
+      "evidence": "<h4>Why watering is tricky</h4>",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "h4|skipped"
+    },
+    {
+      "id": "AT1",
+      "check": "Accessibility basics",
+      "type": "trap",
+      "pages": [
+        "about.html"
+      ],
+      "what": "Icon-only link with a clear aria-label",
+      "evidence": "aria-label=\"Read the latest Leafline news\"",
+      "expected": "no_flag",
+      "method": "Rule",
+      "match": ""
+    },
+    {
+      "id": "S1",
+      "check": "Traditional SEO",
+      "type": "issue",
+      "pages": [
+        "faq.html"
+      ],
+      "what": "Missing page title",
+      "evidence": "(no <title> element)",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "missing page title"
+    },
+    {
+      "id": "S2",
+      "check": "Traditional SEO",
+      "type": "issue",
+      "pages": [
+        "about.html",
+        "news.html"
+      ],
+      "what": "Duplicate page title",
+      "evidence": "<title>Leafline</title>",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "duplicate page title"
+    },
+    {
+      "id": "S3",
+      "check": "Traditional SEO",
+      "type": "issue",
+      "pages": [
+        "pest-guide.html"
+      ],
+      "what": "Missing meta description",
+      "evidence": "(no meta description)",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "missing meta description"
+    },
+    {
+      "id": "S4",
+      "check": "Traditional SEO",
+      "type": "issue",
+      "pages": [
+        "index.html"
+      ],
+      "what": "Broken internal link",
+      "evidence": "shop.html (page does not exist)",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "broken|shop.html"
+    },
+    {
+      "id": "G1",
+      "check": "GEO readiness",
+      "type": "issue",
+      "pages": [
+        "watering-guide.html"
+      ],
+      "what": "No short, direct answer to 'how often should I water?' near the top",
+      "evidence": "(page opens with a long general paragraph)",
+      "expected": "flag",
+      "method": "AI",
+      "match": ""
+    },
+    {
+      "id": "G2",
+      "check": "GEO readiness",
+      "type": "issue",
+      "pages": [
+        "faq.html"
+      ],
+      "what": "FAQ page has no FAQ structured data",
+      "evidence": "(no FAQPage schema)",
+      "expected": "flag",
+      "method": "Rule",
+      "match": "structured data"
+    },
+    {
+      "id": "GT1",
+      "check": "GEO readiness",
+      "type": "trap",
+      "pages": [
+        "news.html"
+      ],
+      "what": "Short news update needs no Q&A structure",
+      "evidence": "November 2026: autumn repotting workshop",
+      "expected": "no_flag",
+      "method": "AI",
+      "match": ""
+    }
+  ]
+}
